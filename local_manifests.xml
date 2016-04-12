@@ -32,7 +32,9 @@
 <project name="shubhmg/platform_vendor_aosp" path="vendor/aosp" remote="git" revision="mm6.0" />
 
 <remove-project name="platform_build" path="build" remote="github" />
-<project name="shubhmg/platform_build" path="build" remote="git" revision="mm6.0" />
+<project name="shubhmg/platform_build" path="build" remote="git" revision="mm6.0" >
+<copyfile src="core/root.mk" dest="Makefile" />
+</project>
 
 <!--Layers Specific(Thanks Deepak Sharma)-->
 <remove-project name="platform/packages/apps/CellBroadcastReceiver" />
